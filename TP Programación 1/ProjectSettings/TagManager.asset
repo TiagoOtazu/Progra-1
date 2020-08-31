@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Enviroment
+    uniqueID: 1708020093
+    locked: 0
+  - name: Objects
+    uniqueID: 2022859159
+    locked: 0
+  - name: Characters
+    uniqueID: 2879074137
+    locked: 0
