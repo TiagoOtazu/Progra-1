@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\federico.degraf\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\federico.degraf\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_TP Programación 1.1808824700.00" t="ExcludeRecursive" />
+    <e p="C:\Users\federico.degraf\Downloads\Programacion I\Progra-1\TP Programación 1" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="_Main" t="Include">
+          <e p="Assets" t="Include">
+            <e p="Medieval_pixel_art_asset_FREE" t="Include">
+              <e p="pixel_snapping_README.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="CharacterInput.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="TP Programación 1.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
