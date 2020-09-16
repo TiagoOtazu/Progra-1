@@ -63,9 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BulletController.cs" />
-    <Compile Include="Assets\Scripts\CharacterInput.cs" />
-    <Compile Include="Assets\Scripts\FlyingEyeShootIA.cs" />
+    <Compile Include="Assets\_Main\Scripts\BulletController.cs" />
+    <Compile Include="Assets\_Main\Scripts\CharacterInput.cs" />
+    <Compile Include="Assets\_Main\Scripts\FlyingEyeShootIA.cs" />
+    <Compile Include="Assets\_Main\Scripts\LoopMovement.cs" />
+    <Compile Include="Assets\_Main\Scripts\sourceManager.cs" />
     <None Include="Assets\_Main\Assets\Medieval_pixel_art_asset_FREE\pixel_snapping_README.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
