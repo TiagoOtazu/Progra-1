@@ -58,15 +58,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CharacterInput.cs" />
-     <Compile Include="Assets\Scripts\EnemyAttackZone.cs" />
-     <Compile Include="Assets\Scripts\EnemyManager.cs" />
-     <Compile Include="Assets\Scripts\EnemyTriggerAttack.cs" />
-     <Compile Include="Assets\Scripts\LifeManager.cs" />
-     <Compile Include="Assets\Scripts\PlayerAttackZone.cs" />
      <Compile Include="Assets\_Main\Scripts\BulletController.cs" />
+     <Compile Include="Assets\_Main\Scripts\CharacterInput.cs" />
+     <Compile Include="Assets\_Main\Scripts\EnemyAttackZone.cs" />
+     <Compile Include="Assets\_Main\Scripts\EnemyManager.cs" />
+     <Compile Include="Assets\_Main\Scripts\EnemyTriggerAttack.cs" />
      <Compile Include="Assets\_Main\Scripts\FlyingEyeShootIA.cs" />
+     <Compile Include="Assets\_Main\Scripts\LifeManager.cs" />
      <Compile Include="Assets\_Main\Scripts\LoopMovement.cs" />
+     <Compile Include="Assets\_Main\Scripts\PlayerAttackZone.cs" />
      <Compile Include="Assets\_Main\Scripts\sourceManager.cs" />
      <None Include="Assets\_Main\Assets\Medieval_pixel_art_asset_FREE\pixel_snapping_README.txt" />
  <Reference Include="Unity.Timeline.Editor">
@@ -149,6 +149,12 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/federico.degraf/Downloads/Programacion I/Progra-1/TP Programación 1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Cinemachine">
+ <HintPath>C:/Users/federico.degraf/Downloads/Programacion I/Progra-1/TP Programación 1/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>C:/Users/federico.degraf/Downloads/Programacion I/Progra-1/TP Programación 1/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

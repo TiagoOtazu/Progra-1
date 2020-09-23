@@ -10,13 +10,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAttackZone.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyTriggerAttack.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LifeManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyAttackZone.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -29,6 +22,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAttackZone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LifeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/BulletController.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/CharacterInput.cs" />
       </list>
     </option>
   </component>
@@ -87,6 +81,7 @@
       <workItem from="1600770812615" duration="9117000" />
       <workItem from="1600857456478" duration="5587000" />
       <workItem from="1600881883987" duration="2808000" />
+      <workItem from="1600894005886" duration="741000" />
     </task>
     <servers />
   </component>
