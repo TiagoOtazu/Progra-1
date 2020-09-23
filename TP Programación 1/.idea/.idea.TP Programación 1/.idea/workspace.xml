@@ -10,10 +10,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAttackZone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyTriggerAttack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LifeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyAttackZone.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/FlyingEyeShootIA.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LifeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAttackZone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAttackZone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyTriggerAttack.cs" />
       </list>
     </option>
   </component>
@@ -63,6 +77,14 @@
       <option name="presentableId" value="Default" />
       <updated>1598912655024</updated>
       <workItem from="1598913026410" duration="5098000" />
+      <workItem from="1600016146569" duration="4000" />
+      <workItem from="1600022009272" duration="6997000" />
+      <workItem from="1600128672385" duration="3140000" />
+      <workItem from="1600293433056" duration="3518000" />
+      <workItem from="1600635380291" duration="6670000" />
+      <workItem from="1600711097440" duration="2482000" />
+      <workItem from="1600770812615" duration="9117000" />
+      <workItem from="1600857456478" duration="5587000" />
     </task>
     <servers />
   </component>
