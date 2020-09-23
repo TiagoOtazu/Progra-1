@@ -22,12 +22,13 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/FlyingEyeShootIA.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LifeManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAttackZone.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAttackZone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyTriggerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAttackZone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAttackZone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LifeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/BulletController.cs" />
       </list>
     </option>
   </component>
@@ -85,6 +86,7 @@
       <workItem from="1600711097440" duration="2482000" />
       <workItem from="1600770812615" duration="9117000" />
       <workItem from="1600857456478" duration="5587000" />
+      <workItem from="1600881883987" duration="2808000" />
     </task>
     <servers />
   </component>

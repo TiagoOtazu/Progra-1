@@ -33,18 +33,18 @@ public class EnemyAttackZone : MonoBehaviour
 
     private void eventoAtaque(Collider2D collision)
     {
-        Debug.Log("Choco con algo");
+        Debug.Log("el enemy choco con algo");
         playerlife = collision.GetComponent<LifeManager>();
         if (playerlife != null)
         {
             try
             {
                 playerlife.GetDamage(damage);
-                //  Debug.Log("Si Funca Invocacion a GetDamage");
+                Debug.Log("Funco el GetDamage a Player");
             }
             catch
             {
-                // Debug.Log("No Funca Invocacion a GetDamage");
+                Debug.Log("No Funco el GetDamage a Player");
                 Exception E;
             }
         }

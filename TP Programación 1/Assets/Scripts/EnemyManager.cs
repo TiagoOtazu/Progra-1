@@ -30,9 +30,9 @@ public class EnemyManager : MonoBehaviour
     {
         if (currentLife > 0)
         {
-          //  Debug.Log("Fue invocado Get Damage");
-            currentLife -= damage;
-          //  Debug.Log("currentLife: " + currentLife);
+            Debug.Log("Get Damage del enemy");
+            currentLife -= damage; 
+            Debug.Log("enemy Life: " + currentLife);
             if (currentLife <= 0)
             {
                 animatorController.SetBool("Dead", true);

@@ -25,11 +25,16 @@ public class BulletController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);    
+        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+
+        if (transform.position.y == target.y)
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("choco con esqueleto");
+        Debug.Log("bullet choco con algo");
         CharacterInput player = collision.GetComponent<CharacterInput>();
         CharacterLife = collision.GetComponent<LifeManager>();
         if (player != null)

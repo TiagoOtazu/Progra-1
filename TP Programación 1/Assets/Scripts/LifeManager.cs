@@ -32,9 +32,8 @@ public class LifeManager : MonoBehaviour
     {
         if (currentLife > 0)
         {
-          //  Debug.Log("Fue invocado Get Damage");
             currentLife -= damage;
-          //  Debug.Log("currentLife: " + currentLife);
+            Debug.Log("Get Damage del player, currentLife: " + currentLife);
             if (currentLife <= 0)
             {
                 animatorController.SetTrigger("Died"); 

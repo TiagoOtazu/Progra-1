@@ -12,14 +12,18 @@
               <e p="pixel_snapping_README.txt" t="Include" />
             </e>
           </e>
+          <e p="Scripts" t="Include">
+            <e p="BulletController.cs" t="Include" />
+            <e p="FlyingEyeShootIA.cs" t="Include" />
+            <e p="LoopMovement.cs" t="Include" />
+            <e p="sourceManager.cs" t="Include" />
+          </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="BulletController.cs" t="Include" />
           <e p="CharacterInput.cs" t="Include" />
           <e p="EnemyAttackZone.cs" t="Include" />
           <e p="EnemyManager.cs" t="Include" />
           <e p="EnemyTriggerAttack.cs" t="Include" />
-          <e p="FlyingEyeShootIA.cs" t="Include" />
           <e p="LifeManager.cs" t="Include" />
           <e p="PlayerAttackZone.cs" t="Include" />
         </e>

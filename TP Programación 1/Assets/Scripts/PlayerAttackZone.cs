@@ -57,11 +57,11 @@ public class PlayerAttackZone : MonoBehaviour
             try
             {
                 enemy.GetDamage(damage);
-                //  Debug.Log("Si Funca Invocacion a GetDamage");
+                Debug.Log("Funca Invocacion a GetDamage del enemy");
             }
             catch
             {
-                // Debug.Log("No Funca Invocacion a GetDamage");
+                Debug.Log("No Funca Invocacion a GetDamage del enemy");
                 Exception E;
             }
         }
