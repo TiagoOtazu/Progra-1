@@ -6,62 +6,48 @@ using UnityEngine;
 public class PlayerAttackZone : MonoBehaviour
 {
 
-    private bool estoyAtacando;
-    public EnemyManager enemy; 
+   private bool estoyAtacando;
+   public EnemyManager enemy; 
    [SerializeField] private float damage;
 
-   // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
-    private void Awake()
+   private void Awake()
     {
         estoyAtacando = false;
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+   private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("OnTriggerEnter");
+        Debug.Log("OnTriggerEnter Attack Zone Player");
         eventoAtaque(collision);
     }
-
-    private void OnTriggerStay2D(Collider2D collision)
+   private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("OnTriggerStay, estoyAtando:" + estoyAtacando);
+        Debug.Log("OnTriggerStay Attack Zone Player");
         if (!estoyAtacando)
         {
             Debug.Log("Ataque en OnTriggerStay");
             eventoAtaque(collision);            
         }
     }
-
-    private void OnEnable()
-    {
+   private void OnEnable()
+   {
+       //Setea que no esta atacando cada vez que se activa
         Debug.Log("OnEnable");
         estoyAtacando = false;
     }
-
-    private void eventoAtaque(Collider2D collision)
+   private void eventoAtaque(Collider2D collision)
     {
         estoyAtacando = true;
-        Debug.Log("Puede Atacar:" + estoyAtacando);
         enemy = collision.GetComponent<EnemyManager>();
         if (enemy != null)
         {
+            //Intenta sacarle a la vida a lo que choco
             try
             {
                 enemy.GetDamage(damage);
-                Debug.Log("Funca Invocacion a GetDamage del enemy");
             }
             catch
             {
-                Debug.Log("No Funca Invocacion a GetDamage del enemy");
+                Debug.Log("Error en el evento Ataque del player");
                 Exception E;
             }
         }

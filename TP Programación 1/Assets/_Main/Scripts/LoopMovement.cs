@@ -5,18 +5,11 @@ using UnityEngine;
 public class LoopMovement : MonoBehaviour
 {
     public float amplitud = .5f;
-
     [SerializeField] private Animator animator;
-
-
-
-    // Update is called once per frame
     void Update()
     {
         transform.position += new Vector3(amplitud * Mathf.Sin(1f * Time.time), 0);
-
         //llamada de animación por código//
-
         /*if (Input.GetKeyDown(KeyCode.P))
         {
             animator.SetBool("Clicked", true);
@@ -25,9 +18,5 @@ public class LoopMovement : MonoBehaviour
         {
             animator.SetBool("Clicked", false);
         } */
-
-        
-        
-        
     }
 }

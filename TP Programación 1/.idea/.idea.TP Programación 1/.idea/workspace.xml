@@ -21,8 +21,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAttackZone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAttackZone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LifeManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/BulletController.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/CharacterInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/LifeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/PlayerAttackZone.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/sourceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/BulletController.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/FlyingEyeShootIA.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/LoopMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/EnemyTriggerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/EnemyAttackZone.cs" />
       </list>
     </option>
   </component>
@@ -82,6 +90,8 @@
       <workItem from="1600857456478" duration="5587000" />
       <workItem from="1600881883987" duration="2808000" />
       <workItem from="1600894005886" duration="741000" />
+      <workItem from="1600897680305" duration="779000" />
+      <workItem from="1601124185317" duration="4786000" />
     </task>
     <servers />
   </component>

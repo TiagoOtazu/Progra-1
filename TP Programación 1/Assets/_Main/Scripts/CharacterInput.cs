@@ -18,17 +18,6 @@ public class CharacterInput : MonoBehaviour
     private float attackTimer;
     [SerializeField] private AudioClip swordSound;
     static AudioSource audioSource;
-    void Start()
-    {
-        /*
-Se termino resolviendo de otra forma, pero la idea es utiliarlo
-        leftKey = "a";
-        rightKey = "d";
-        jumpKey = " ";
-        attackKey = "t";
-*/
-        
-    }
     public void GetKilled()
     {
         isAlive = false;
@@ -36,8 +25,9 @@ Se termino resolviendo de otra forma, pero la idea es utiliarlo
     }
     void Update()
     {
-    if (isAlive)
-    {
+        if (isAlive) 
+        {
+            //Movimiento del personaje
             float xMovement = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
             transform.position += new Vector3(xMovement, 0f, 0f);
             bool keyRightDown = Input.GetKeyDown(KeyCode.A);
@@ -47,22 +37,20 @@ Se termino resolviendo de otra forma, pero la idea es utiliarlo
             bool keyLeftUp = Input.GetKeyUp(KeyCode.D);
             if (keyRightDown && lookFront)
             {
+                //Lo rota para que mire hacia la izquierda
                transform.Rotate(0,180,0);
                lookFront = false;
             }
-    
             if (keyLeftDown && !lookFront)
             {
+                //Lo rota para que mire hacia adelante
                transform.Rotate(0,180,0);
                lookFront = true;
             }
-    
             if (keyLeftUp || KeyRightUp && !(keyLeftDown || keyRightDown))
             {
                 animatorController.SetBool("IsRunning", false);
-               // Debug.Log("Dejo de correr");
             }
-    
             if (keyLeftDown || keyRightDown)
             {
                 animatorController.SetBool("IsRunning", true);
@@ -71,9 +59,10 @@ Se termino resolviendo de otra forma, pero la idea es utiliarlo
             {
                 Attack();
             }
-
+            //pregunta si el attackzone esta activado
             if (attackZone.activeInHierarchy)
             {
+                //De ser asi se fija hace cuanto esta activado, si supera la variable tiempoDeAtaque lo desactiva
                 if (attackTimer >= tiempoDeAtaque)
                 {
                     attackZone.SetActive(false);
@@ -84,43 +73,20 @@ Se termino resolviendo de otra forma, pero la idea es utiliarlo
                     attackTimer += Time.deltaTime;
                 }
             }
+        }
     }
-
-    /*
-    leftCondition = Input.GetKey(KeyCode.A);
-    rightCondition = Input.GetKey(KeyCode.D);
-    jumpCondition = Input.GetKey(KeyCode.Space);
-    attackCondition = Input.GetKey(KeyCode.K);
-    if (leftCondition)
-    {
-        /*float XAxis = 1 * -speed * Time.deltaTime;
-        transform.Translate(new Vector3(XAxis, 0, 0)); 
-    }
-    if (jumpCondition)
-    {
-        Debug.Log("Evento Salto");
-    }
-    if (rightCondition)
-    {
-        float XAxis = 1 * speed * Time.deltaTime;
-        transform.Translate(new Vector3(XAxis, 0, 0));
-    }
-    */
-    }
-
     void Awake()
     {
         animatorController = GetComponent<Animator>();
         isAlive = true;
         attackZone.SetActive(false);
         attackTimer = 0;
-        audioSource = GetComponent<AudioSource>();
-        }
+        audioSource = GetComponent<AudioSource>(); 
+    }
     private void Attack()
     {
-        Debug.Log("Evento ataque");
         animatorController.SetTrigger("attackEvent");
         attackZone.SetActive(true); 
-audioSource.PlayOneShot(swordSound);
+        audioSource.PlayOneShot(swordSound);
     }
 }

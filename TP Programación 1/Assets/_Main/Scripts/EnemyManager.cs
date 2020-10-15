@@ -7,25 +7,15 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] private float maxLife;
     private float currentLife;
     private Animator animatorController;
-
     private CharacterInput characterinputScript;
-    // Start is called before the first frame update
     void Start()
     {
         currentLife = maxLife;
     }
-
     private void Awake()
     {
         animatorController = GetComponent<Animator>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void GetDamage(float damage)
     {
         if (currentLife > 0)
