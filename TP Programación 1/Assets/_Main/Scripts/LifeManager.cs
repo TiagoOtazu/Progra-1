@@ -9,9 +9,11 @@ public class LifeManager : MonoBehaviour
     private float currentLife;
     private Animator animatorController;
     private CharacterInput characterinputScript;
+    public int Enemydead;
     void Start()
     {
         currentLife = maxLife;
+        Enemydead = 0;
     }
     private void Awake()
     {

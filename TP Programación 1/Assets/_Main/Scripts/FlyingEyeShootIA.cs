@@ -10,6 +10,7 @@ public class FlyingEyeShootIA: MonoBehaviour
     public float startTime;
     private Transform player;
     [SerializeField] private Transform firepoint;
+    
     public void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -21,10 +22,12 @@ public class FlyingEyeShootIA: MonoBehaviour
             Instantiate(bullet, firepoint.position, Quaternion.identity);
             sourceManager.PlaySound("ShootFlyEye");
             timeBetweenShoots = startTime;
+            
         }
         else
         {
             timeBetweenShoots -= Time.deltaTime;
+            
         }
     }
 }

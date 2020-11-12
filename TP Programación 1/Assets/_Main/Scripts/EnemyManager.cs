@@ -8,9 +8,12 @@ public class EnemyManager : MonoBehaviour
     private float currentLife;
     private Animator animatorController;
     private CharacterInput characterinputScript;
+    public LifeManager lifeManager;
+
     void Start()
     {
         currentLife = maxLife;
+    
     }
     private void Awake()
     {
@@ -20,16 +23,21 @@ public class EnemyManager : MonoBehaviour
     {
         if (currentLife > 0)
         {
-            Debug.Log("Get Damage del enemy");
+            //Debug.Log("Get Damage del enemy");
             currentLife -= damage; 
-            Debug.Log("enemy Life: " + currentLife);
+            //Debug.Log("enemy Life: " + currentLife);
             if (currentLife <= 0)
             {
+                lifeManager.Enemydead++;
+                Debug.Log("Se murió el enemy");
                 animatorController.SetBool("Dead", true);
                 characterinputScript.GetKilled();
+
+                
             }
             else
             {
+                Debug.Log("Me estan pegando mami");
                 animatorController.SetTrigger("GetHitted");
             }   
         }
