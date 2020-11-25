@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LifeManager : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class LifeManager : MonoBehaviour
     private Animator animatorController;
     private CharacterInput characterinputScript;
     public int Enemydead;
+    public Action<LifeManager, float> updateUI;
+    [SerializeField] public UIManager UIM;
+    public new UnityEvent looseEvent;
     void Start()
     {
         currentLife = maxLife;
@@ -26,6 +30,7 @@ public class LifeManager : MonoBehaviour
         if (currentLife > 0)
         {
             currentLife -= damage;
+            UIM.updateLifeBar(currentLife);
             Debug.Log("currentLife: " + currentLife);
             if (currentLife <= 0)
             {
@@ -33,6 +38,7 @@ public class LifeManager : MonoBehaviour
                 animatorController.SetTrigger("Died"); 
                 animatorController.SetBool("IsRunning", false);
                 characterinputScript.GetKilled();
+                looseEvent.Invoke();
             }
             else
             {

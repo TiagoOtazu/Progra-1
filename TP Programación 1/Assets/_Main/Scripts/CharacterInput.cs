@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEditor.UIElements;
@@ -18,6 +19,7 @@ public class CharacterInput : MonoBehaviour
     private float attackTimer;
     [SerializeField] private AudioClip swordSound;
     static AudioSource audioSource;
+    public ParticleSystem dust;
     public void GetKilled()
     {
         isAlive = false;
@@ -28,6 +30,7 @@ public class CharacterInput : MonoBehaviour
         if (isAlive) 
         {
             //Movimiento del personaje
+            
             float xMovement = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
             transform.position += new Vector3(xMovement, 0f, 0f);
             bool keyRightDown = Input.GetKeyDown(KeyCode.A);
@@ -54,6 +57,14 @@ public class CharacterInput : MonoBehaviour
             if (keyLeftDown || keyRightDown)
             {
                 animatorController.SetBool("IsRunning", true);
+                CreateDust();
+
+            }
+
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A))
+            {
+//             CreateDust();
+                dust.Play();
             }
             if (TriggerAttack)
             {
@@ -89,4 +100,20 @@ public class CharacterInput : MonoBehaviour
         attackZone.SetActive(true); 
         audioSource.PlayOneShot(swordSound);
     }
+    void CreateDust(){
+        dust.Play();
+    }
+
+    private void FixedUpdate()
+    {
+        bool JumpKey = Input.GetKeyDown(KeyCode.Space);
+        
+        if (JumpKey)
+        { 
+        animatorController.SetTrigger("jumpEvent");
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(0,7), ForceMode2D.Impulse);
+        }
+    }
 }
+
+

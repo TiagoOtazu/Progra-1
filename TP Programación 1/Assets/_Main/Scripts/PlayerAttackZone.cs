@@ -16,28 +16,29 @@ public class PlayerAttackZone : MonoBehaviour
     }
    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("OnTriggerEnter Attack Zone Player");
+        //Debug.Log("OnTriggerEnter Attack Zone Player");
         eventoAtaque(collision);
     }
    private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("OnTriggerStay Attack Zone Player");
+        //Debug.Log("OnTriggerStay Attack Zone Player");
         if (!estoyAtacando)
         {
-            Debug.Log("Ataque en OnTriggerStay");
+            //Debug.Log("Ataque en OnTriggerStay");
             eventoAtaque(collision);            
         }
     }
    private void OnEnable()
    {
        //Setea que no esta atacando cada vez que se activa
-        Debug.Log("OnEnable");
+        //Debug.Log("OnEnable");
         estoyAtacando = false;
     }
    private void eventoAtaque(Collider2D collision)
     {
         estoyAtacando = true;
         enemy = collision.GetComponent<EnemyManager>();
+        PalancaController palancaController = collision.GetComponent<PalancaController>();
         if (enemy != null)
         {
             //Intenta sacarle a la vida a lo que choco
@@ -47,9 +48,13 @@ public class PlayerAttackZone : MonoBehaviour
             }
             catch
             {
-                Debug.Log("Error en el evento Ataque del player");
-                Exception E;
+                //Debug.Log("Error en el evento Ataque del player");
+                //Exception E;
             }
+        }
+        else if (palancaController != null)
+        {
+            palancaController.ActivaEscalera();
         }
     }
 }

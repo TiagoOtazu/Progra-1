@@ -85,7 +85,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -133,6 +133,7 @@ MonoBehaviour:
   bullet: {fileID: 6649526004697323816, guid: 240d685a7dcccbe429cf9421ccc7e899, type: 3}
   startTime: 2
   firepoint: {fileID: 1464739470}
+  distance: 0
 --- !u!114 &6881172811794757703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLife: 50
-  lifeManager: {fileID: 0}
+  gameManager: {fileID: 0}
+  deadAnimation: Dead
 --- !u!61 &4122835547752524436
 BoxCollider2D:
   m_ObjectHideFlags: 0
